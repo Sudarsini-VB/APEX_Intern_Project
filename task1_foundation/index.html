@@ -4,27 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>V. B. Sudarsini | Full Stack Developer Portfolio</title>
-   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
 <body>
   <!-- HEADER -->
- <header>
-  <div class="container">
-    <h1>V. B. Sudarsini</h1>
-    <p class="tagline">Final-Year B.E. Artificial Intelligence & Data Science</p>
-    <p class="role">Full Stack Developer | AI & Data Science Enthusiast</p>
+  <header>
+    <div class="container">
+      <h1>V. B. Sudarsini</h1>
+      <p class="tagline">Final-Year B.E. Artificial Intelligence & Data Science</p>
+      <p class="role">Full Stack Developer | AI & Data Science Enthusiast</p>
 
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
   <!-- ABOUT -->
   <section id="about" class="section">
@@ -72,7 +70,6 @@
   <!-- PROJECTS -->
   <section id="projects" class="section">
     <h2>Projects</h2>
-
     <div class="project">
       <h3>I-Flush — Suction-Based Flushing System</h3>
       <p>
@@ -89,35 +86,53 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <p>I'm open to collaborations, internships, and project opportunities. Let’s connect!</p>
-    <form action="php/submit_contact.php" method="post" id="contactForm">
+ <!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <p>I'm open to collaborations, internships, and project opportunities. Let’s connect!</p>
 
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+  <!-- ✅ Formspree Integration -->
+  <form id="contactForm" action="https://formspree.io/f/xwpaevwl" method="POST">
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    <span id="namePreview"></span>
+
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+
+  <!-- ✅ Success Popup -->
+  <div id="successPopup" style="
+      display:none; 
+      position:fixed; top:30%; left:50%; transform:translateX(-50%);
+      background:#100f0f; padding:25px 40px; border-radius:10px;
+      box-shadow:0 4px 20px rgba(0,0,0,0.4); text-align:center; z-index:999;">
+    <p>✅ Your message has been sent successfully!</p>
+    <button id="closePopup"
+      style="margin-top:10px; background:#007bff; color:white;
+      border:none; padding:8px 15px; border-radius:5px; cursor:pointer;">
+      Close
+    </button>
+  </div>
+</section>
+
 
   <!-- FOOTER -->
   <footer>
     <p>🌍 Coimbatore | 📧 <a href="mailto:sudarsinivb@gmail.com">sudarsinivb@gmail.com</a> | ☎️ 9025023536</p>
     <p class="social-links">
-  <a href="https://github.com/Sudarsini-VB" target="_blank" class="social github">
-    <i class="fab fa-github"></i>
-  </a>
-  <a href="https://linkedin.com/in/sudarsini-balasubramani-a63514280" target="_blank" class="social linkedin">
-    <i class="fab fa-linkedin"></i>
-  </a>
-  <a href="mailto:sudarsinivb@gmail.com" class="social email">
-    <i class="fas fa-envelope"></i>
-  </a>
-</p>
-
-    <p class="copy">© 2025 V. B. Sudarsini </p>
+      <a href="https://github.com/Sudarsini-VB" target="_blank" class="social github">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/sudarsini-balasubramani-a63514280" target="_blank" class="social linkedin">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:sudarsinivb@gmail.com" class="social email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </p>
+    <p class="copy">© 2025 V. B. Sudarsini</p>
   </footer>
 
   <script src="js/script.js"></script>

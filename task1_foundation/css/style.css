@@ -44,6 +44,62 @@ nav a:hover {
   color: #facc15;
 }
 
+/* Extra commit: added hover effect on button */
+button:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+/* 🌟 Success Popup Styling */
+#successPopup {
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.95);
+  background: linear-gradient(135deg, #4caf50, #81c784); /* green gradient */
+  color: white;
+  padding: 25px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  z-index: 999;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+/* ✨ When popup is visible */
+#successPopup.show {
+  display: block;
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+/* ✅ Popup Message Text */
+#successPopup p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* 🔘 Close Button Styling */
+#closePopup {
+  margin-top: 15px;
+  background: #ffffff;
+  color: #388e3c;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+#closePopup:hover {
+  background: #f1f8e9;
+  transform: scale(1.05);
+}
+
+
 
 /* SECTIONS */
 .section{max-width:900px;margin:40px auto;padding:25px;background:rgba(255,255,255,0.05);border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.2)}

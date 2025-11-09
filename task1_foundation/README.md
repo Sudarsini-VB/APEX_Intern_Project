@@ -39,4 +39,8 @@ http://localhost/apex_intern/task1_foundation/index.html
 Sudarsini V.B.
 GitHub: https://github.com/Sudarsini-VB
 
+<<<<<<< HEAD
 ---
+=======
+
+>>>>>>> 6db0589 (Removed index lock issues - auto update fix)
