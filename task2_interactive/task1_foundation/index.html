@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V. B. Sudarsini | Full Stack Developer Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <h1>V. B. Sudarsini</h1>
+      <p class="tagline">Final-Year B.E. Artificial Intelligence & Data Science</p>
+      <p class="role">Full Stack Developer | AI & Data Science Enthusiast</p>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm <strong>V. B. Sudarsini</strong>, a passionate learner and developer from Coimbatore,
+      currently pursuing <strong>B.E. in Artificial Intelligence and Data Science</strong>.
+      I specialize in designing and developing dynamic, user-friendly web applications with a focus on
+      clean design, scalability, and functionality.
+    </p>
+    <p>
+      My interests lie in <strong>Full Stack Web Development</strong>, <strong>Artificial Intelligence</strong>,
+      and <strong>Data Analytics</strong>. I enjoy exploring how intelligent systems and web technologies
+      can come together to create efficient, impactful solutions.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div>
+        <h3>Frontend Development</h3>
+        <p>HTML5, CSS3, JavaScript (ES6), Bootstrap 5, Responsive Web Design</p>
+      </div>
+      <div>
+        <h3>Backend Development</h3>
+        <p>PHP, Node.js (Basics), REST APIs, AJAX, JSON, Form Handling, Sessions</p>
+      </div>
+      <div>
+        <h3>Database</h3>
+        <p>MySQL, SQL Queries, phpMyAdmin, CRUD Operations, Database Design (ERD)</p>
+      </div>
+      <div>
+        <h3>Tools & Platforms</h3>
+        <p>Git, GitHub, VS Code, XAMPP, Power BI, Excel</p>
+      </div>
+      <div>
+        <h3>Other Knowledge</h3>
+        <p>Networking, Hardware Setup, UI/UX Concepts, Debugging & Troubleshooting</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>I-Flush — Suction-Based Flushing System</h3>
+      <p>
+        Designed a low-cost, eco-friendly sanitation solution that minimizes water usage using a suction-based mechanism.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Personal Portfolio Website</h3>
+      <p>
+        A responsive and dynamic web portfolio developed using HTML, CSS, JavaScript, PHP, and MySQL.
+        It includes contact form integration and a simple backend database connection.
+      </p>
+    </div>
+  </section>
+
+ <!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <p>I'm open to collaborations, internships, and project opportunities. Let’s connect!</p>
+
+  <!-- ✅ Formspree Integration -->
+  <form id="contactForm" action="https://formspree.io/f/xwpaevwl" method="POST">
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    <span id="namePreview"></span>
+
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+
+  <!-- ✅ Success Popup -->
+  <div id="successPopup" style="
+      display:none; 
+      position:fixed; top:30%; left:50%; transform:translateX(-50%);
+      background:#100f0f; padding:25px 40px; border-radius:10px;
+      box-shadow:0 4px 20px rgba(0,0,0,0.4); text-align:center; z-index:999;">
+    <p>✅ Your message has been sent successfully!</p>
+    <button id="closePopup"
+      style="margin-top:10px; background:#007bff; color:white;
+      border:none; padding:8px 15px; border-radius:5px; cursor:pointer;">
+      Close
+    </button>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>🌍 Coimbatore | 📧 <a href="mailto:sudarsinivb@gmail.com">sudarsinivb@gmail.com</a> | ☎️ 9025023536</p>
+    <p class="social-links">
+      <a href="https://github.com/Sudarsini-VB" target="_blank" class="social github">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/sudarsini-balasubramani-a63514280" target="_blank" class="social linkedin">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:sudarsinivb@gmail.com" class="social email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </p>
+    <p class="copy">© 2025 V. B. Sudarsini</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
