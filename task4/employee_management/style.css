@@ -1,0 +1,66 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #748EC6;
+}
+
+/* Table */
+table {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Table header */
+thead {
+    background-color: #5468A5;
+    color: #fff;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #5468A5;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #3f4f7f;
+}
+
+/* Form card */
+.container form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Error messages */
+.error {
+    color: red;
+    font-style: italic;
+}
+
+/* Headings */
+h2 {
+    color: #3f4f7f;
+    margin-bottom: 20px;
+}
+
+/* Alert messages */
+.alert-warning {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
