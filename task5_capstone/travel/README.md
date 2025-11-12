@@ -55,6 +55,63 @@ To build a dynamic travel website that allows users to browse destinations, book
 
 ---
 
+---
+
+## 🧩 ER Diagram
+
+The following **Entity Relationship Diagram (ERD)** represents the database structure of the Travel & Tourism Management System:
+
+```mermaid
+erDiagram
+ USERS {
+     int user_id PK
+     varchar name
+     varchar email
+     varchar password
+     varchar role
+ }
+
+ DESTINATIONS {
+     int destination_id PK
+     varchar destination_name
+     varchar location
+     text description
+     varchar image
+ }
+
+ PACKAGES {
+     int package_id PK
+     varchar package_name
+     int destination_id FK
+     decimal price
+     varchar duration
+     text details
+ }
+
+ BOOKINGS {
+     int booking_id PK
+     int user_id FK
+     int package_id FK
+     date booking_date
+     varchar status
+ }
+
+ CONTACTS {
+     int contact_id PK
+     varchar name
+     varchar email
+     text message
+     date sent_date
+ }
+
+ USERS ||--o{ BOOKINGS : makes
+ PACKAGES ||--o{ BOOKINGS : contains
+ DESTINATIONS ||--o{ PACKAGES : includes
+ USERS ||--o{ CONTACTS : sends
+
+```
+---
+
 ## 🧑‍💻 Author
 
 **V.B. Sudarsini**  
