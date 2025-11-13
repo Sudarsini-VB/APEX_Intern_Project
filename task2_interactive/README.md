@@ -30,4 +30,3 @@ It includes login & registration pages, smooth animations, custom styling, and r
 ## Author
 **V. B. Sudarsini**  
 AI & Data Science | APEX Intern Project  
-[Live Project](https://87ff9dfe.apexinterntask2.pages.dev)
